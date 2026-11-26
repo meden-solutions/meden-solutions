@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MEDEN SOLUTIONS – gozdarstvo, strojništvo, konstruiranje in tehnične rešitve.">
+<title>MEDEN SOLUTIONS | Več kot rešitev.</title>
+<style>
+:root {
+  --bg:#101713;
+  --panel:#19241d;
+  --green:#355b40;
+  --gold:#c5a66b;
+  --white:#f4f5ef;
+  --muted:#aab5aa;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--white);
+  font-family:Arial, sans-serif;
+  line-height:1.7;
+}
+header{
+  padding:22px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  border-bottom:1px solid #ffffff18;
+}
+.logo{font-size:24px;font-weight:bold;letter-spacing:2px}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--white);text-decoration:none;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{
+  min-height:570px;
+  display:flex;
+  align-items:center;
+  padding:90px 9%;
+  background:
+  linear-gradient(90deg,#101713f5,#101713a0),
+  url('https://images.unsplash.com/photo-1511497584788-876760111969?w=1800')
+  center/cover;
+}
+.hero-content{max-width:750px}
+.eyebrow{color:var(--gold);letter-spacing:4px;font-size:12px}
+h1{font-size:clamp(43px,7vw,76px);line-height:1.1;margin:18px 0}
+.hero p{color:#d0d8cf;font-size:19px;max-width:600px}
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  background:var(--gold);
+  color:#101713;
+  padding:13px 25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+section{padding:85px 9%}
+.section-title{
+  font-size:35px;
+  margin:0 0 15px;
+}
+.intro{color:var(--muted);max-width:700px}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+  margin-top:40px;
+}
+.card{
+  background:var(--panel);
+  padding:30px;
+  border:1px solid #ffffff15;
+  transition:.2s;
+}
+.card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.icon{font-size:35px}
+.card h3{font-size:21px}
+.card p{color:var(--muted);font-size:15px}
+.light{background:#17221b}
+.number{color:var(--gold);font-size:13px;letter-spacing:2px}
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+.about-image{
+  width:100%;
+  min-height:320px;
+  object-fit:cover;
+}
+.contact{
+  background:var(--green);
+  text-align:center;
+}
+.contact p{color:#e2e9df}
+footer{
+  padding:35px 8%;
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+}
+@media(max-width:650px){
+  header{justify-content:center;gap:15px}
+  nav{justify-content:center;gap:12px}
+  .hero{padding:75px 7%;min-height:480px}
+  section{padding:60px 7%}
+  .about{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MEDEN <span>SOLUTIONS</span></div>
+  <nav>
+    <a href="#domov">Domov</a>
+    <a href="#dejavnosti">Dejavnosti</a>
+    <a href="#podjetje">O nas</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero" id="domov">
+  <div class="hero-content">
+    <div class="eyebrow">MEDEN SOLUTIONS</div>
+    <h1>Ideje.<br>Znanje.<br>Rešitve.</h1>
+    <p>
+      Povezujemo naravo, tehniko in znanje.
+      Od gozdarstva do strojništva in konstruiranja.
+      Različne dejavnosti, ena skupna vizija.
+    </p>
+    <a class="btn" href="#dejavnosti">SPOZNAJTE NAŠE DEJAVNOSTI</a>
+  </div>
+</div>
+
+<section id="dejavnosti">
+  <div class="eyebrow">KAJ POČNEMO</div>
+  <h2 class="section-title">Naše dejavnosti</h2>
+  <p class="intro">
+    Različna področja dela združujemo pod eno znamko.
+    Vsak projekt obravnavamo individualno,
+    zanesljivo in strokovno.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🌲</div>
+      <div class="number">01 / GOZDARSTVO</div>
+      <h3>Meden Forest</h3>
+      <p>
+        Skrbništvo gozdov, spremljanje stanja,
+        organizacija gozdarskih del,
+        sečnja in spravilo lesa.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <div class="number">02 / STROJNIŠTVO</div>
+      <h3>Meden Industry</h3>
+      <p>
+        Strojništvo, tehnične rešitve,
+        izdelava in razvoj mehanskih
+        sistemov ter konstrukcij.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📐</div>
+      <div class="number">03 / KONSTRUIRANJE</div>
+      <h3>Meden Engineering</h3>
+      <p>
+        Tehnično načrtovanje, 3D-modeliranje,
+        konstruiranje in razvoj
+        novih izdelkov.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔧</div>
+      <div class="number">04 / STORITVE</div>
+      <h3>Meden Services</h3>
+      <p>
+        Različne tehnične in organizacijske
+        storitve po dogovoru ter
+        individualne rešitve za stranke.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="podjetje">
+  <div class="about">
+    <div>
+      <div class="eyebrow">NAŠA ZGODBA</div>
+      <h2 class="section-title">Več področij. Ena vizija.</h2>
+      <p class="intro">
+        MEDEN SOLUTIONS združuje različna
+        področja dela, ki temeljijo na
+        praktičnem znanju, tehničnem razmišljanju
+        in iskanju učinkovitih rešitev.
+      </p>
+      <p class="intro">
+        Naš cilj je razvijati dejavnosti,
+        povezovati znanje in ustvarjati
+        kakovostne rešitve za prihodnost.
+      </p>
+    </div>
+    <img class="about-image"
+    src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000"
+    alt="Tehnologija in inženiring">
+  </div>
+</section>
+
+<section id="kontakt" class="contact">
+  <div class="eyebrow">STOPIMO V STIK</div>
+  <h2 class="section-title">Imate projekt ali vprašanje?</h2>
+  <p>
+    Z veseljem se pogovorimo o vaših idejah,
+    potrebah in možnostih sodelovanja.
+  </p>
+  <p><strong>MEDEN SOLUTIONS</strong></p>
+  <p>Kontaktni podatki bodo dodani naknadno.</p>
+</section>
+</main>
+
+<footer>
+  <strong>MEDEN SOLUTIONS</strong>
+  <p>Gozdarstvo · Strojništvo · Konstruiranje · Rešitve</p>
+  <p>© 2026 MEDEN SOLUTIONS. Vse pravice pridržane.</p>
+</footer>
+
+</body>
+</html>
