@@ -1,1 +1,222 @@
 
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Kontakt | MEDEN SOLUTIONS</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="index.html">
+    MEDEN <span>SOLUTIONS</span>
+  </a>
+
+  <button class="menu-btn" onclick="toggleMenu()"
+  aria-label="Odpri meni" aria-expanded="false">☰</button>
+
+  <nav id="navigation">
+    <a href="index.html">Domov</a>
+
+    <div class="dropdown">
+      <a href="index.html#dejavnosti">Dejavnosti ▾</a>
+      <div class="dropdown-content">
+        <a href="forest.html">Meden Forest</a>
+        <a href="industry.html">Meden Industry</a>
+        <a href="engineering.html">Meden Engineering</a>
+        <a href="construction.html">Meden Construction</a>
+        <a href="transport.html">Meden Transport</a>
+        <a href="services.html">Meden Services</a>
+      </div>
+    </div>
+
+    <a href="index.html#podjetje">O podjetju</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+
+<div class="hero"
+style="background-image:linear-gradient(90deg,#101713f5,#10171380),url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1800');background-position:center;background-size:cover;">
+
+  <div class="hero-content">
+    <div class="eyebrow">MEDEN SOLUTIONS</div>
+    <h1>
+      Stopimo<br>
+      v stik.
+    </h1>
+    <p>
+      Imate vprašanje, projekt ali povpraševanje?
+      Z veseljem bomo prisluhnili vašim željam.
+    </p>
+    <a class="btn" href="#kontaktni-obrazec">
+      POŠLJITE POVPRAŠEVANJE →
+    </a>
+  </div>
+</div>
+
+
+<section id="kontaktni-obrazec">
+
+  <div class="eyebrow">KONTAKT</div>
+  <h2>Pošljite nam povpraševanje</h2>
+
+  <p class="intro">
+    Izpolnite spodnji obrazec in opišite,
+    kaj potrebujete. Odgovorili vam bomo
+    po prejemu vašega sporočila.
+  </p>
+
+  <div class="contact-layout">
+
+    <div class="contact-info">
+
+      <h3>MEDEN SOLUTIONS</h3>
+
+      <p>
+        Za informacije o naših dejavnostih,
+        storitvah in možnostih sodelovanja
+        nam pošljite povpraševanje.
+      </p>
+
+      <p>
+        <strong>Dejavnosti:</strong><br>
+        Meden Forest<br>
+        Meden Industry<br>
+        Meden Engineering<br>
+        Meden Construction<br>
+        Meden Transport<br>
+        Meden Services
+      </p>
+
+      <p>
+        <strong>Kontaktni podatki</strong><br>
+        Kontaktni podatki bodo dodani
+        po potrditvi telefonske številke
+        in elektronskega naslova.
+      </p>
+
+    </div>
+
+
+    <form class="contact-form" id="contactForm">
+
+      <div class="form-group">
+        <label for="ime">Ime in priimek *</label>
+        <input
+        class="form-control"
+        type="text"
+        id="ime"
+        name="ime"
+        placeholder="Vaše ime in priimek"
+        required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Elektronski naslov *</label>
+        <input
+        class="form-control"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="vas@email.si"
+        required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefon">Telefonska številka</label>
+        <input
+        class="form-control"
+        type="tel"
+        id="telefon"
+        name="telefon"
+        placeholder="Vaša telefonska številka">
+      </div>
+
+      <div class="form-group">
+        <label for="dejavnost">Izbira dejavnosti *</label>
+        <select
+        class="form-control"
+        id="dejavnost"
+        name="dejavnost"
+        required>
+
+          <option value="">Izberite dejavnost</option>
+          <option value="Meden Forest">Meden Forest</option>
+          <option value="Meden Industry">Meden Industry</option>
+          <option value="Meden Engineering">Meden Engineering</option>
+          <option value="Meden Construction">Meden Construction</option>
+          <option value="Meden Transport">Meden Transport</option>
+          <option value="Meden Services">Meden Services</option>
+          <option value="Splošno povpraševanje">Splošno povpraševanje</option>
+
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="sporocilo">Vaše sporočilo *</label>
+        <textarea
+        class="form-control"
+        id="sporocilo"
+        name="sporocilo"
+        rows="6"
+        placeholder="Opišite vaše povpraševanje..."
+        required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="privacy-label">
+          <input type="checkbox" required>
+          Strinjam se z obdelavo podatkov
+          za namen odgovora na povpraševanje.
+        </label>
+      </div>
+
+      <button type="submit" class="btn">
+        POŠLJI POVPRAŠEVANJE →
+      </button>
+
+      <p class="form-note">
+        Polja, označena z zvezdico (*), so obvezna.
+      </p>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<section class="cta">
+  <div class="eyebrow">MEDEN SOLUTIONS</div>
+  <h2>Veselimo se sodelovanja z vami.</h2>
+  <p class="intro">
+    Hvala za vaše zanimanje za naše storitve.
+  </p>
+  <a class="btn" href="index.html">
+    NAZAJ NA ZAČETNO STRAN →
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <strong>MEDEN SOLUTIONS</strong>
+  <p>
+    Gozdarstvo · Strojništvo · Konstruiranje ·
+    Gradbeništvo · Transport
+  </p>
+  <p>© 2026 MEDEN SOLUTIONS</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
