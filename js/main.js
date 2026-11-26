@@ -1,16 +1,22 @@
 
+// MEDEN SOLUTIONS
+// Mobilni navigacijski meni
+
 function toggleMenu() {
-  const nav = document.getElementById("navigation");
-  const button = document.querySelector(".menu-btn");
+    const navigation = document.getElementById("navigation");
+    const menuButton = document.querySelector(".menu-btn");
 
-  const isOpen = nav.classList.toggle("open");
-  button.setAttribute("aria-expanded", isOpen);
-}
+    if (!navigation || !menuButton) {
+        return;
+    }
 
-function closeMenu() {
-  const nav = document.getElementById("navigation");
-  const button = document.querySelector(".menu-btn");
+    navigation.classList.toggle("active");
 
-  nav.classList.remove("open");
-  button.setAttribute("aria-expanded", "false");
+    const isOpen = navigation.classList.contains("active");
+
+    menuButton.setAttribute("aria-expanded", isOpen);
+    menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Zapri meni" : "Odpri meni"
+    );
 }
